@@ -15,7 +15,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private long id;
-    @NotNull
+    @NotNull(message = "{toxifyou.constraint.username.NotNull.message}")
     @Size(min = 6, max = 32)
     @Column(name = "username")
     @UniqueUsername
@@ -27,7 +27,7 @@ public class User {
     @NotNull
     @Size(min = 8, max = 64)
     @Column(name = "password")
-    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).*$")
+    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).*$", message = "{toxifyou.constraint.username.Pattern.message}")
     private String password;
 
     public String getUsername() {
