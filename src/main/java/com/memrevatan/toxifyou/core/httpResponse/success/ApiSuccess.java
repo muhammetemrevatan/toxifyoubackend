@@ -1,14 +1,16 @@
 package com.memrevatan.toxifyou.core.httpResponse.success;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.util.Date;
 import java.util.Map;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ApiSuccess {
     private int status;
     private String message;
     private String path;
     private long timestamp = new Date().getTime();
-    private Map<String, String> validationSuccess;
 
     public ApiSuccess(int status, String message, String path) {
         this.status = status;
@@ -48,11 +50,5 @@ public class ApiSuccess {
         this.timestamp = timestamp;
     }
 
-    public Map<String, String> getValidationSuccess() {
-        return validationSuccess;
-    }
 
-    public void setValidationSuccess(Map<String, String> validationSuccess) {
-        this.validationSuccess = validationSuccess;
-    }
 }
