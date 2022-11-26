@@ -22,9 +22,9 @@ public class UserManager implements UserService {
     private PasswordEncoder passwordEncoder;
 
     @Autowired
-    public UserManager(UserDao userDao) {
+    public UserManager(UserDao userDao, PasswordEncoder passwordEncoder) {
         this.userDao = userDao;
-        this.passwordEncoder = new BCryptPasswordEncoder();
+        this.passwordEncoder = passwordEncoder;
     }
 
     @Override
@@ -32,6 +32,6 @@ public class UserManager implements UserService {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
         userDao.save(user);
         log.info("User created! " + user + " " + LocalDateTime.now());
-        return ResponseEntity.status(HttpStatus.OK).body(new ApiSuccess(200,"User created!","/api/1.0/users"));
+        return ResponseEntity.status(HttpStatus.OK).body(new ApiSuccess(200, "User created!", "/api/1.0/users"));
     }
 }

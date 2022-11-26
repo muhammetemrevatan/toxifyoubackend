@@ -2,13 +2,16 @@ package com.memrevatan.toxifyou.api.controllers;
 
 import com.fasterxml.jackson.annotation.JsonView;
 import com.memrevatan.toxifyou.business.abstracts.AuthService;
+import com.memrevatan.toxifyou.core.annotation.CurrentUser;
+import com.memrevatan.toxifyou.core.httpResponse.error.ApiError;
 import com.memrevatan.toxifyou.core.jsonView.BaseView;
+import com.memrevatan.toxifyou.entities.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.security.core.Authentication;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class AuthController {
@@ -19,10 +22,10 @@ public class AuthController {
         this.authService = authService;
     }
 
-    @CrossOrigin
     @PostMapping("/api/1.0/auth")
     @JsonView(BaseView.Base.class)
-    public ResponseEntity<?> handleAuthentication(@RequestHeader(name = "Authorization", required = false) String authorization) {
-        return this.authService.handleAuthentication(authorization);
+    public ResponseEntity<?> handleAuthentication(@CurrentUser User user) {
+        return this.authService.handleAuthentication(user);
     }
+
 }
