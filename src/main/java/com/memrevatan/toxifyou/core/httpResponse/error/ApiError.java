@@ -2,7 +2,7 @@ package com.memrevatan.toxifyou.core.httpResponse.error;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonView;
-import com.memrevatan.toxifyou.core.jsonView.BaseView;
+//import com.memrevatan.toxifyou.core.jsonView.BaseView;
 
 import java.util.Date;
 import java.util.Map;
@@ -10,15 +10,15 @@ import java.util.Map;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ApiError {
 
-    @JsonView(BaseView.Base.class)
+//    @JsonView(BaseView.Base.class)
     private int status;
-    @JsonView(BaseView.Base.class)
+//    @JsonView(BaseView.Base.class)
     private String message;
-    @JsonView(BaseView.Base.class)
+//    @JsonView(BaseView.Base.class)
     private String path;
-    @JsonView(BaseView.Base.class)
+//    @JsonView(BaseView.Base.class)
     private long timestamp = new Date().getTime();
-    @JsonView(BaseView.Base.class)
+//    @JsonView(BaseView.Base.class)
     private Map<String, String> validationErrors;
 
     public ApiError(int httpStatus, String message, String path) {
