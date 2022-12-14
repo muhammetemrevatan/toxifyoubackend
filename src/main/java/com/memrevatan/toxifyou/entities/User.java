@@ -49,6 +49,7 @@ public class User implements UserDetails {
     private String password;
 
 //    @JsonView(BaseView.Base.class)
+//    @Lob // column limiti büyük obje tipplerini tutacak sekilde ayarlanır. 255 karakteri geçebilir.
     private String image;
 
     @Override
