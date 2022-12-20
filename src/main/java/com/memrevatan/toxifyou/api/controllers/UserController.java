@@ -55,7 +55,7 @@ public class UserController {
      * Login olan kullanıcı username ve password bilgisine principal ile ulaşabiliyoruz. (UserDetails için aynısı yapılmıştı.)
      * */
     @PreAuthorize("#username == principal.username") // Bu anatastonun yakalanabilmesi için configuration class'ında tek bir satır annotation eklendi.
-    public UserDto updatedUser(@RequestBody UserDisplayNameDto userDisplayNameDto, @PathVariable String username) {
+    public UserDto updatedUser(@Valid @RequestBody UserDisplayNameDto userDisplayNameDto, @PathVariable String username) {
         return new UserDto(userService.updatedUser(userDisplayNameDto, username));
     }
 

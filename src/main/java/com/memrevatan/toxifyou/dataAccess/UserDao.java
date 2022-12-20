@@ -10,4 +10,5 @@ import org.springframework.stereotype.Repository;
 public interface UserDao extends JpaRepository<User, Long> {
     User findByUsername(String username);
     Page<User> findByUsernameNot(String user, Pageable page);
+    User getByUsername(String username);
 }
