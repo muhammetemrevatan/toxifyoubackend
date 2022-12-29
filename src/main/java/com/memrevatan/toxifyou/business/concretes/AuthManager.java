@@ -3,10 +3,8 @@ package com.memrevatan.toxifyou.business.concretes;
 import com.memrevatan.toxifyou.business.abstracts.AuthService;
 import com.memrevatan.toxifyou.dataAccess.UserDao;
 import com.memrevatan.toxifyou.entities.User;
+import com.memrevatan.toxifyou.entities.userViewModel.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -21,7 +19,7 @@ public class AuthManager implements AuthService {
     }
 
     @Override
-    public ResponseEntity<?> handleAuthentication(User user) {
-        return ResponseEntity.ok(user);
+    public UserDto handleAuthentication(User user) {
+        return new UserDto(user);
     }
 }
