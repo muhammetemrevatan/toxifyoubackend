@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -21,6 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @EnableWebSecurity // Websecurity için bu class'ı enable et. Configuration'ı buradan al demiş olduk.
+@EnableGlobalMethodSecurity(prePostEnabled = true) // UserController içerisinde anlatıldı..
 public class SecurityConfiguration {
 
     private final UserAuthService userDetailsService;
@@ -41,6 +43,8 @@ public class SecurityConfiguration {
         httpSecurity // permitAll asagıda olmalı sıralamayı ters yaparsak permitAll digerlerini ezecektir.
                 .authorizeRequests()// Request'in neye match edecegine bakması için antMatchers dedik.
                 .antMatchers(HttpMethod.POST, "/api/1.0/auth").authenticated()//authenticated ile buraya gelen request içerisinde auth parametreleri bulundurmak zorunda dedik.
+                .antMatchers(HttpMethod.PUT,"/api/1.0/users/{username}").authenticated()
+                .antMatchers(HttpMethod.POST,"/api/1.0/posts").authenticated()
                 .and()
                 .authorizeRequests().anyRequest().permitAll(); // herhangi bir request(anyRequest()) için artık authentication'a(permitAll()) bakma.
 
