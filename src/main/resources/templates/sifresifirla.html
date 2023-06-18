@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Şifre Sıfırlama</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        .logo {
+            width: 150px;
+            height: 150px;
+        }
+
+        .title {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="text-center">
+                    <img src="logo.png" alt="logo" class="logo">
+                    <h1 class="title text-primary">Şifre Sıfırlama</h1>
+                </div>
+                <form action="/reset-password" method="post" class="mt-4">
+                    <div class="form-group text-center">
+                        <label class="text-center text-dark"><strong> Kullanıcı Adı
+                            </strong></label>
+                        <br>
+                        <label class="text-danger"><i> Thymeleaf ile verilecektir. </i></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Şifre Sıfırla</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

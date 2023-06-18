@@ -53,6 +53,8 @@ public class User implements UserDetails {
 //    @JsonView(BaseView.Base.class)
 //    @Lob // column limiti büyük obje tipplerini tutacak sekilde ayarlanır. 255 karakteri geçebilir.
     private String image;
+    @NotNull(message = "{toxifyou.constraint.email.NotNull.message}")
+    private String email;
 
     @Override
     public boolean isAccountNonExpired() {

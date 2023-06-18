@@ -13,10 +13,6 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -86,26 +82,26 @@ public class PostManager implements PostService {
     @Override
     public ResponseEntity<?> getOldAndNewPosts(long id, String username, Pageable page, boolean count, String direction) {
         var user = userDao.getByUsername(username);
-        if(username != null) {
-            if(count) {
+        if (username != null) {
+            if (count) {
                 long newPostCount = postDao.countByIdGreaterThanAndUser(id, user);
                 Map<String, Long> response = new HashMap<>();
                 response.put("count", newPostCount);
                 return ResponseEntity.ok(response);
             }
-            if(direction.equals("after")) {
+            if (direction.equals("after")) {
                 var newPosts = postDao.findByIdGreaterThanAndUser(id, user, page.getSort()).stream().map(PostDto::new).toList();
                 return ResponseEntity.ok(newPosts);
             }
             return ResponseEntity.ok(postDao.findByIdLessThanAndUser(id, user, page).map(PostDto::new));
         }
-        if(count) {
+        if (count) {
             long newPostCount = postDao.countByIdGreaterThan(id);
             Map<String, Long> response = new HashMap<>();
             response.put("count", newPostCount);
             return ResponseEntity.ok(response);
         }
-        if(direction.equals("after")) {
+        if (direction.equals("after")) {
             var newPosts = postDao.findByIdGreaterThan(id, page.getSort()).stream().map(PostDto::new).toList();
             return ResponseEntity.ok(newPosts);
         }
@@ -115,6 +111,8 @@ public class PostManager implements PostService {
     }
 
     Specification<Post> idLessThan(long id) {
-        return (root, query, criteriaBuilder) -> { return criteriaBuilder.lessThan(root.get("id"), id); };
+        return (root, query, criteriaBuilder) -> {
+            return criteriaBuilder.lessThan(root.get("id"), id);
+        };
     }
 }

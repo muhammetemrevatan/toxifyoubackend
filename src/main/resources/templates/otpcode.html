@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Şifre Sıfırlama</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        .title {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5 text-center">
+            <div class="col-md-6">
+                <div class="text-center">
+                    <img th:src="'data:image/png;base64,' + ${image}" alt="logo">
+                    <h1 class="title text-primary">One Time Password</h1>
+                </div>
+                <form action="/reset-password" method="post" class="mt-4">
+                    <div class="form-group text-center">
+                        <label class="text-center text-dark"><strong> OTP CODE</strong></label>
+                        <br>
+                        <br>
+                        <label class="text-danger font-italic" th:text="${otpCode}"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

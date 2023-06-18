@@ -1,15 +1,13 @@
 package com.memrevatan.toxifyou;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 
 @SpringBootApplication
 public class ToxifyouApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ToxifyouApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ToxifyouApplication.class, args);
+    }
 
 }

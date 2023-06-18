@@ -1,0 +1,14 @@
+FROM rabbitmq:3.12
+
+RUN set eux; \
+	rabbitmq-plugins enable --offline rabbitmq_management; \
+	rm -f /etc/rabbitmq/conf.d/20-management_agent.disable_metrics_collector.conf; \
+	cp /plugins/rabbitmq_management-*/priv/www/cli/rabbitmqadmin /usr/local/bin/rabbitmqadmin; \
+	[ -s /usr/local/bin/rabbitmqadmin ]; \
+	chmod +x /usr/local/bin/rabbitmqadmin; \
+	apt-get update; \
+	apt-get install -y --no-install-recommends python3; \
+	rm -rf /var/lib/apt/lists/*; \
+	rabbitmqadmin --version
+
+EXPOSE 15671 15672

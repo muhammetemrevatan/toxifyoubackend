@@ -1,0 +1,271 @@
+2023-06-05 22:30:20,867 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ToxifyouApplication using Java 17.0.4 on DESKTOP-4QOGTQH with PID 26984 (C:\Users\vatan\Desktop\Bitirme Projesi\toxifyou\toxifyou\target\classes started by vatan in C:\Users\vatan\Desktop\Bitirme Projesi\toxifyou\toxifyou)
+2023-06-05 22:30:20,865 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2023-06-05 22:30:20,868 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-06-05 22:30:20,869 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-06-05 22:30:20,928 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-05 22:30:20,928 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-05 22:30:22,296 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 22:30:22,448 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 131 ms. Found 2 JPA repository interfaces.
+2023-06-05 22:30:23,586 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2023-06-05 22:30:23,594 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:30:23,594 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-06-05 22:30:23,596 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-06-05 22:30:23,675 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-06-05 22:30:23,675 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2746 ms
+2023-06-05 22:30:23,811 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 22:30:23,864 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.11.Final
+2023-06-05 22:30:23,990 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-05 22:30:24,121 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-06-05 22:30:24,294 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-06-05 22:30:24,309 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-05 22:30:24,954 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 22:30:24,959 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 22:30:25,806 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4eae59de, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e7c7a87, org.springframework.security.web.context.SecurityContextPersistenceFilter@56300296, org.springframework.security.web.header.HeaderWriterFilter@633a7492, org.springframework.security.web.authentication.logout.LogoutFilter@3282f783, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c94a899, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2351f2f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d1d9476, org.springframework.security.web.session.SessionManagementFilter@1a7e04ee, org.springframework.security.web.access.ExceptionTranslationFilter@64162ba0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@29ad7b75]
+2023-06-05 22:30:25,862 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 22:30:26,230 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-06-05 22:30:26,302 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:30:26,321 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8090 (http) with context path ''
+2023-06-05 22:30:26,332 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ToxifyouApplication in 6.074 seconds (JVM running for 7.726)
+2023-06-05 22:32:07,840 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 22:32:07,840 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8090-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-06-05 22:32:07,841 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8090-exec-1] Completed initialization in 1 ms
+2023-06-05 22:37:57,145 INFO org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-06-05 22:37:57,164 INFO org.apache.juli.logging.DirectJDKLog [Thread-5] Pausing ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:37:57,165 INFO org.apache.juli.logging.DirectJDKLog [Thread-5] Stopping service [Tomcat]
+2023-06-05 22:37:57,166 INFO org.apache.juli.logging.DirectJDKLog [Thread-5] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-05 22:37:57,171 INFO org.apache.juli.logging.DirectJDKLog [Thread-5] Stopping ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:37:57,173 INFO org.apache.juli.logging.DirectJDKLog [Thread-5] Destroying ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:37:57,180 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 22:37:57,184 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2023-06-05 22:37:57,192 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2023-06-05 22:37:57,289 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ToxifyouApplication using Java 17.0.4 on DESKTOP-4QOGTQH with PID 26984 (C:\Users\vatan\Desktop\Bitirme Projesi\toxifyou\toxifyou\target\classes started by vatan in C:\Users\vatan\Desktop\Bitirme Projesi\toxifyou\toxifyou)
+2023-06-05 22:37:57,290 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-06-05 22:37:57,290 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-06-05 22:37:57,594 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 22:37:57,614 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2023-06-05 22:37:57,748 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2023-06-05 22:37:57,749 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:37:57,750 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-06-05 22:37:57,750 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-06-05 22:37:57,771 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-06-05 22:37:57,771 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 477 ms
+2023-06-05 22:37:57,839 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 22:37:57,845 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2023-06-05 22:37:58,004 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2023-06-05 22:37:58,013 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-05 22:37:58,111 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 22:37:58,111 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 22:37:58,133 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\vatan\Desktop\Bitirme Projesi\toxifyou\toxifyou\target\classes\com\memrevatan\toxifyou\api\controllers\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.memrevatan.toxifyou.business.abstracts.AuthService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-06-05 22:37:58,133 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 22:37:58,134 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Shutdown initiated...
+2023-06-05 22:37:58,170 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Shutdown completed.
+2023-06-05 22:37:58,171 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2023-06-05 22:37:58,181 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-05 22:37:58,214 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.memrevatan.toxifyou.api.controllers.AuthController required a bean of type 'com.memrevatan.toxifyou.business.abstracts.AuthService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.memrevatan.toxifyou.business.abstracts.AuthService' in your configuration.
+
+2023-06-05 22:37:59,714 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ToxifyouApplication using Java 17.0.4 on DESKTOP-4QOGTQH with PID 26984 (C:\Users\vatan\Desktop\Bitirme Projesi\toxifyou\toxifyou\target\classes started by vatan in C:\Users\vatan\Desktop\Bitirme Projesi\toxifyou\toxifyou)
+2023-06-05 22:37:59,714 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-06-05 22:37:59,714 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-06-05 22:37:59,957 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 22:37:59,977 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2023-06-05 22:38:00,090 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2023-06-05 22:38:00,090 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:38:00,090 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-06-05 22:38:00,091 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-06-05 22:38:00,106 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-06-05 22:38:00,106 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 388 ms
+2023-06-05 22:38:00,147 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 22:38:00,151 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2023-06-05 22:38:00,194 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2023-06-05 22:38:00,194 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-05 22:38:00,263 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 22:38:00,264 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 22:38:00,502 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@a52b5db, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e9a77ad, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c140616, org.springframework.security.web.header.HeaderWriterFilter@8d94808, org.springframework.security.web.authentication.logout.LogoutFilter@56b9d615, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d2e556c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ff5d1c9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c574781, org.springframework.security.web.session.SessionManagementFilter@659df933, org.springframework.security.web.access.ExceptionTranslationFilter@439459e9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e706b23]
+2023-06-05 22:38:00,533 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 22:38:00,712 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-06-05 22:38:00,738 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:38:00,741 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8090 (http) with context path ''
+2023-06-05 22:38:00,746 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ToxifyouApplication in 1.066 seconds (JVM running for 462.14)
+2023-06-05 22:38:00,748 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-06-05 22:38:53,634 INFO org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-06-05 22:38:53,645 INFO org.apache.juli.logging.DirectJDKLog [Thread-7] Pausing ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:38:53,645 INFO org.apache.juli.logging.DirectJDKLog [Thread-7] Stopping service [Tomcat]
+2023-06-05 22:38:53,648 INFO org.apache.juli.logging.DirectJDKLog [Thread-7] Stopping ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:38:53,650 INFO org.apache.juli.logging.DirectJDKLog [Thread-7] Destroying ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:38:53,651 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 22:38:53,652 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-3 - Shutdown initiated...
+2023-06-05 22:38:53,654 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-3 - Shutdown completed.
+2023-06-05 22:38:53,731 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ToxifyouApplication using Java 17.0.4 on DESKTOP-4QOGTQH with PID 26984 (C:\Users\vatan\Desktop\Bitirme Projesi\toxifyou\toxifyou\target\classes started by vatan in C:\Users\vatan\Desktop\Bitirme Projesi\toxifyou\toxifyou)
+2023-06-05 22:38:53,731 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-06-05 22:38:53,731 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-06-05 22:38:53,970 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 22:38:53,994 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2023-06-05 22:38:54,122 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2023-06-05 22:38:54,123 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:38:54,123 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-06-05 22:38:54,123 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-06-05 22:38:54,142 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-06-05 22:38:54,143 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 410 ms
+2023-06-05 22:38:54,205 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 22:38:54,210 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2023-06-05 22:38:54,265 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2023-06-05 22:38:54,266 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-05 22:38:54,364 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 22:38:54,365 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 22:38:54,382 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\vatan\Desktop\Bitirme Projesi\toxifyou\toxifyou\target\classes\com\memrevatan\toxifyou\api\controllers\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.memrevatan.toxifyou.business.abstracts.AuthService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-06-05 22:38:54,382 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 22:38:54,383 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Shutdown initiated...
+2023-06-05 22:38:54,428 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Shutdown completed.
+2023-06-05 22:38:54,429 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2023-06-05 22:38:54,436 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-05 22:38:54,443 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.memrevatan.toxifyou.api.controllers.AuthController required a bean of type 'com.memrevatan.toxifyou.business.abstracts.AuthService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.memrevatan.toxifyou.business.abstracts.AuthService' in your configuration.
+
+2023-06-05 22:38:55,926 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ToxifyouApplication using Java 17.0.4 on DESKTOP-4QOGTQH with PID 26984 (C:\Users\vatan\Desktop\Bitirme Projesi\toxifyou\toxifyou\target\classes started by vatan in C:\Users\vatan\Desktop\Bitirme Projesi\toxifyou\toxifyou)
+2023-06-05 22:38:55,927 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-06-05 22:38:55,927 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-06-05 22:38:56,153 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 22:38:56,173 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2023-06-05 22:38:56,265 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2023-06-05 22:38:56,265 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:38:56,265 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-06-05 22:38:56,266 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-06-05 22:38:56,280 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-06-05 22:38:56,281 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 352 ms
+2023-06-05 22:38:56,319 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 22:38:56,323 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Starting...
+2023-06-05 22:38:56,362 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Start completed.
+2023-06-05 22:38:56,363 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-05 22:38:56,427 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 22:38:56,428 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 22:38:56,641 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b5c7a07, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bb1329, org.springframework.security.web.context.SecurityContextPersistenceFilter@4fbdb6de, org.springframework.security.web.header.HeaderWriterFilter@3916fb3c, org.springframework.security.web.authentication.logout.LogoutFilter@7173cc2d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19257f7a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1764b879, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7daa14b9, org.springframework.security.web.session.SessionManagementFilter@76a64b90, org.springframework.security.web.access.ExceptionTranslationFilter@157866dd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@50653d2]
+2023-06-05 22:38:56,668 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 22:38:56,813 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-06-05 22:38:56,830 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:38:56,833 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8090 (http) with context path ''
+2023-06-05 22:38:56,837 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ToxifyouApplication in 0.937 seconds (JVM running for 518.232)
+2023-06-05 22:38:56,839 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-06-05 22:39:11,637 INFO org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-06-05 22:39:11,651 INFO org.apache.juli.logging.DirectJDKLog [Thread-14] Pausing ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:39:11,651 INFO org.apache.juli.logging.DirectJDKLog [Thread-14] Stopping service [Tomcat]
+2023-06-05 22:39:11,654 INFO org.apache.juli.logging.DirectJDKLog [Thread-14] Stopping ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:39:11,656 INFO org.apache.juli.logging.DirectJDKLog [Thread-14] Destroying ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:39:11,658 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-14] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 22:39:11,659 INFO com.zaxxer.hikari.HikariDataSource [Thread-14] HikariPool-5 - Shutdown initiated...
+2023-06-05 22:39:11,660 INFO com.zaxxer.hikari.HikariDataSource [Thread-14] HikariPool-5 - Shutdown completed.
+2023-06-05 22:39:11,747 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ToxifyouApplication using Java 17.0.4 on DESKTOP-4QOGTQH with PID 26984 (C:\Users\vatan\Desktop\Bitirme Projesi\toxifyou\toxifyou\target\classes started by vatan in C:\Users\vatan\Desktop\Bitirme Projesi\toxifyou\toxifyou)
+2023-06-05 22:39:11,749 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-06-05 22:39:11,749 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-06-05 22:39:12,043 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 22:39:12,062 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+2023-06-05 22:39:12,164 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2023-06-05 22:39:12,165 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:39:12,165 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-06-05 22:39:12,165 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-06-05 22:39:12,183 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-06-05 22:39:12,184 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 432 ms
+2023-06-05 22:39:12,249 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 22:39:12,253 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-6 - Starting...
+2023-06-05 22:39:12,297 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-6 - Start completed.
+2023-06-05 22:39:12,298 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-05 22:39:12,372 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 22:39:12,373 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 22:39:12,390 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [C:\Users\vatan\Desktop\Bitirme Projesi\toxifyou\toxifyou\target\classes\com\memrevatan\toxifyou\api\controllers\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.memrevatan.toxifyou.business.abstracts.AuthService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-06-05 22:39:12,390 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 22:39:12,391 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-6 - Shutdown initiated...
+2023-06-05 22:39:12,391 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-6 - Shutdown completed.
+2023-06-05 22:39:12,392 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2023-06-05 22:39:12,397 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-05 22:39:12,404 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.memrevatan.toxifyou.api.controllers.AuthController required a bean of type 'com.memrevatan.toxifyou.business.abstracts.AuthService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.memrevatan.toxifyou.business.abstracts.AuthService' in your configuration.
+
+2023-06-05 22:39:13,890 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting ToxifyouApplication using Java 17.0.4 on DESKTOP-4QOGTQH with PID 26984 (C:\Users\vatan\Desktop\Bitirme Projesi\toxifyou\toxifyou\target\classes started by vatan in C:\Users\vatan\Desktop\Bitirme Projesi\toxifyou\toxifyou)
+2023-06-05 22:39:13,890 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-06-05 22:39:13,890 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-06-05 22:39:14,131 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-05 22:39:14,149 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+2023-06-05 22:39:14,247 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8090 (http)
+2023-06-05 22:39:14,247 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:39:14,248 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-06-05 22:39:14,248 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-06-05 22:39:14,265 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-06-05 22:39:14,265 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 373 ms
+2023-06-05 22:39:14,307 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-05 22:39:14,311 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-7 - Starting...
+2023-06-05 22:39:14,356 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-7 - Start completed.
+2023-06-05 22:39:14,357 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-06-05 22:39:14,434 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-05 22:39:14,435 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 22:39:14,666 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@31ce2118, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a235331, org.springframework.security.web.context.SecurityContextPersistenceFilter@b05cfe8, org.springframework.security.web.header.HeaderWriterFilter@37ca7114, org.springframework.security.web.authentication.logout.LogoutFilter@21a7de9e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3999228, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@673f119e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cf2944e, org.springframework.security.web.session.SessionManagementFilter@64f0ea8d, org.springframework.security.web.access.ExceptionTranslationFilter@30571878, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@564a9937]
+2023-06-05 22:39:14,692 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-05 22:39:14,880 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-06-05 22:39:14,904 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8090"]
+2023-06-05 22:39:14,908 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8090 (http) with context path ''
+2023-06-05 22:39:14,914 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started ToxifyouApplication in 1.049 seconds (JVM running for 536.308)
+2023-06-05 22:39:14,917 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-06-05 22:39:21,779 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8090-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-05 22:39:21,779 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8090-exec-3] Initializing Servlet 'dispatcherServlet'
+2023-06-05 22:39:21,780 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8090-exec-3] Completed initialization in 1 ms
+2023-06-05 22:39:25,212 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8090-exec-3] Resolved [com.memrevatan.toxifyou.core.httpResponse.error.AuthException]
+2023-06-05 22:39:25,238 WARN com.memrevatan.toxifyou.core.httpResponse.error.ErrorHandler [http-nio-8090-exec-3] FieldErrorList is null! : Cannot invoke "java.util.List.iterator()" because "fieldErrorList" is null
+2023-06-05 22:39:34,214 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8090-exec-4] Resolved [com.memrevatan.toxifyou.core.httpResponse.error.AuthException]
+2023-06-05 22:39:34,216 WARN com.memrevatan.toxifyou.core.httpResponse.error.ErrorHandler [http-nio-8090-exec-4] FieldErrorList is null! : Cannot invoke "java.util.List.iterator()" because "fieldErrorList" is null
+2023-06-05 22:41:05,121 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8090-exec-1] Resolved [com.memrevatan.toxifyou.core.httpResponse.error.AuthException]
+2023-06-05 22:41:05,123 WARN com.memrevatan.toxifyou.core.httpResponse.error.ErrorHandler [http-nio-8090-exec-1] FieldErrorList is null! : Cannot invoke "java.util.List.iterator()" because "fieldErrorList" is null
+2023-06-05 22:41:09,414 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8090-exec-3] Resolved [com.memrevatan.toxifyou.core.httpResponse.error.AuthException]
+2023-06-05 22:41:09,415 WARN com.memrevatan.toxifyou.core.httpResponse.error.ErrorHandler [http-nio-8090-exec-3] FieldErrorList is null! : Cannot invoke "java.util.List.iterator()" because "fieldErrorList" is null
+2023-06-05 22:41:11,934 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8090-exec-2] Resolved [com.memrevatan.toxifyou.core.httpResponse.error.AuthException]
+2023-06-05 22:41:11,936 WARN com.memrevatan.toxifyou.core.httpResponse.error.ErrorHandler [http-nio-8090-exec-2] FieldErrorList is null! : Cannot invoke "java.util.List.iterator()" because "fieldErrorList" is null
+2023-06-05 22:45:10,861 WARN com.memrevatan.toxifyou.core.httpResponse.error.ErrorHandler [http-nio-8090-exec-2] FieldErrorList is null! : Cannot invoke "java.util.List.iterator()" because "fieldErrorList" is null
+2023-06-05 22:45:25,743 WARN com.memrevatan.toxifyou.core.httpResponse.error.ErrorHandler [http-nio-8090-exec-1] FieldErrorList is null! : Cannot invoke "java.util.List.iterator()" because "fieldErrorList" is null
+2023-06-05 22:45:26,055 WARN com.memrevatan.toxifyou.core.httpResponse.error.ErrorHandler [http-nio-8090-exec-3] FieldErrorList is null! : Cannot invoke "java.util.List.iterator()" because "fieldErrorList" is null
+2023-06-05 22:50:11,324 WARN com.memrevatan.toxifyou.core.httpResponse.error.ErrorHandler [http-nio-8090-exec-8] FieldErrorList is null! : Cannot invoke "java.util.List.iterator()" because "fieldErrorList" is null
+2023-06-05 22:50:45,389 WARN com.memrevatan.toxifyou.core.httpResponse.error.ErrorHandler [http-nio-8090-exec-1] FieldErrorList is null! : Cannot invoke "java.util.List.iterator()" because "fieldErrorList" is null
+2023-06-05 22:52:18,803 WARN com.memrevatan.toxifyou.core.httpResponse.error.ErrorHandler [http-nio-8090-exec-2] FieldErrorList is null! : Cannot invoke "java.util.List.iterator()" because "fieldErrorList" is null
+2023-06-05 23:01:42,546 WARN com.memrevatan.toxifyou.core.httpResponse.error.ErrorHandler [http-nio-8090-exec-1] FieldErrorList is null! : Cannot invoke "java.util.List.iterator()" because "fieldErrorList" is null
+2023-06-05 23:04:59,003 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-05 23:04:59,004 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-7 - Shutdown initiated...
+2023-06-05 23:04:59,010 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-7 - Shutdown completed.

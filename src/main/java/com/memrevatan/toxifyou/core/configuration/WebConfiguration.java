@@ -1,12 +1,10 @@
 package com.memrevatan.toxifyou.core.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.CacheControl;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -24,7 +22,7 @@ public class WebConfiguration implements WebMvcConfigurer {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         // http://localhost:8080/images/profile.png
         registry.addResourceHandler("/images/**") // Eğer yukarıdaki gibi bir istek atılırsa buradaki handler devreye girer.
-                .addResourceLocations("file:./"+appConfiguration.getUploadPath()+"/")
+                .addResourceLocations("file:./" + appConfiguration.getUploadPath() + "/")
                 .setCacheControl(CacheControl.maxAge(365, TimeUnit.DAYS));
     }
 
@@ -33,7 +31,7 @@ public class WebConfiguration implements WebMvcConfigurer {
         return (args) -> {
             File folder = new File(appConfiguration.getUploadPath());
             boolean folderExist = folder.exists() && folder.isDirectory();
-            if(!folderExist) {
+            if (!folderExist) {
                 folder.mkdir();
             }
         };

@@ -1,19 +1,12 @@
 package com.memrevatan.toxifyou.api.controllers;
 
-import com.fasterxml.jackson.annotation.JsonView;
 import com.memrevatan.toxifyou.business.abstracts.UserService;
-import com.memrevatan.toxifyou.core.abstracts.UserProjection;
-import com.memrevatan.toxifyou.core.httpResponse.error.ApiError;
-//import com.memrevatan.toxifyou.core.jsonView.BaseView;
 import com.memrevatan.toxifyou.core.annotation.CurrentUser;
+import com.memrevatan.toxifyou.core.httpResponse.success.ApiSuccess;
 import com.memrevatan.toxifyou.entities.User;
-import com.memrevatan.toxifyou.entities.userViewModel.UserDto;
 import com.memrevatan.toxifyou.entities.userViewModel.UserDisplayNameDto;
 import com.memrevatan.toxifyou.entities.userViewModel.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.http.HttpStatus;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -21,10 +14,6 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.function.Function;
 
 @RestController
 @RequestMapping(value = "/api/1.0")
@@ -36,9 +25,8 @@ public class UserController {
         this.userService = userService;
     }
 
-    @PostMapping("/api/1.0/users")
     @PostMapping("/users")
-    public ResponseEntity<?> createUser(@Valid @RequestBody User user) {
+    public ResponseEntity<ApiSuccess> createUser(@Valid @RequestBody User user) {
         return this.userService.createUser(user);
     }
 
@@ -73,7 +61,8 @@ public class UserController {
      * @CurrentUser User loggedInUser parametresi kaldırıldı. Bu kontrol 'principal.username' ile sağlandı.
      * Login olan kullanıcı username ve password bilgisine principal ile ulaşabiliyoruz. (UserDetails için aynısı yapılmıştı.)
      * */
-    @PreAuthorize("#username == principal.username") // Bu anatastonun yakalanabilmesi için configuration class'ında tek bir satır annotation eklendi.
+    @PreAuthorize("#username == principal.username")
+    // Bu anatastonun yakalanabilmesi için configuration class'ında tek bir satır annotation eklendi.
     public UserDto updatedUser(@Valid @RequestBody UserDisplayNameDto userDisplayNameDto, @PathVariable String username) {
         return new UserDto(userService.updatedUser(userDisplayNameDto, username));
     }
