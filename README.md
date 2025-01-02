@@ -3,7 +3,7 @@
 title: "ToxifYou Social Platform Backend"
 description: "Robust Spring Boot backend service for ToxifYou social media platform, featuring user management, social interactions, and secure API endpoints"
 showcase: true
-order: 2
+order: 1
 
 # Technologies
 technologies:
